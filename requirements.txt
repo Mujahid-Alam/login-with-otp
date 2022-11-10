@@ -11,3 +11,7 @@ sqlparse==0.4.3
 twilio==7.15.0
 urllib3==1.26.12
 whitenoise==6.2.0
+
+
+#   follow > deployee > Heroku
+# https://www.codechit.com/django-github-auto-deployment-to-heroku/
