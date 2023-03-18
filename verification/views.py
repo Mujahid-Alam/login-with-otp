@@ -14,8 +14,8 @@ def home(request):
     #     return redirect('/')
 
     if request.COOKIES.get('verified') and request.COOKIES.get('verified')!=None:
-        return render(request, 'home.html', {})
-        # return HttpResponse('<h1> This is a Home page  </h1>')
+        # return render(request, 'home.html', {})
+        return HttpResponse('<h1> This is a Home page  </h1>')
 
     else:
         return HttpResponse(" Not verified.")
@@ -37,6 +37,8 @@ def register(request):
         red.set_cookie("can_otp_enter",True,max_age=600)
         return red  
     return render(request, 'register.html')
+
+
 
 
 def otpVerify(request,uid):
